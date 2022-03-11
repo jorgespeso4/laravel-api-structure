@@ -18,6 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/users', [UserController::class, 'allUsers']);
 Route::get('/users/{id}', [UserController::class, 'getUserById']);
 Route::post('/something', [UserController::class, 'postSomething']);
+<<<<<<< HEAD
 
 Route::post('/otherthing', [UserController::class, 'postOtherThing']);
 Route::delete('/delsom', [UserController::class, 'deleteSomething']);
+=======
+Route::post('/otherthing', [UserController::class, 'postOtherThing']);
+>>>>>>> 37667661ccd6acee714e56e4446a8bc1370ed71e
