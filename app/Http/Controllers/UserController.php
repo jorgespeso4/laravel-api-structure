@@ -60,6 +60,15 @@ class UserController extends Controller
         // Crear una función en la que si se pasa el parámetro "premium" a true en el $request, 
         // devuelva un código de estado "OK" y un mensaje "el usuario es premium". 
         // En caso de que se le pase premium false, devolver un código de estado "KO" y mensaje "error: usuario no premium"
+        if ($request->premium === "true") {
+        return response()->json([
+            "hola" => "hola"
+        ]);
+        } else {
+            return response()->json([
+                "adios" => "adios"
+            ]);
+        }
     }
     public function deleteSomething(Request $request)
     {

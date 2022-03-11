@@ -18,5 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/users', [UserController::class, 'allUsers']);
 Route::get('/users/{id}', [UserController::class, 'getUserById']);
 Route::post('/something', [UserController::class, 'postSomething']);
-Route::post('/other', [UserController::class, 'postOtherThing']);
-Route::post('/delsom', [UserController::class, 'deleteSomething']);
+
+Route::post('/otherthing', [UserController::class, 'postOtherThing']);
+Route::delete('/delsom', [UserController::class, 'deleteSomething']);
